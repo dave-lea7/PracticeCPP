@@ -5,16 +5,19 @@
  *      Author: keunholee
  */
 
-#include "Main.h"
+#include <stdio.h>
+#include <tchar.h>
+#include "Calculator.h"
 
-Main::Main()
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
 {
-	// TODO Auto-generated constructor stub
-
+	Calculator c;
+	c.Add(1,2);
+	c.ShowResult();
+	c.Substract(1,2);
+	c.ShowResult();
 }
 
-Main::~Main() 
-{
-	// TODO Auto-generated destructor stub
-}
 
